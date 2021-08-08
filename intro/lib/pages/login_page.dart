@@ -128,10 +128,10 @@ class _LoginPageState extends State<LoginPage> {
                     child: AnimatedContainer(
                       duration: Duration(seconds: 1),
                       height: 40,
-                      width: 120,
+                      width: 150,
                       alignment: Alignment.center,
                       child: Text(
-                        "Login",
+                        "Register",
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
