@@ -25,6 +25,9 @@ class _LoginPageState extends State<LoginPage> {
         key: _formKey,
         child: Column(
           children: [
+            SizedBox(
+              height: 50,
+            ),
             CircleAvatar(
                 radius: 70, child: Image.asset("assets/images/firstimage.png")),
             SizedBox(
@@ -72,7 +75,10 @@ class _LoginPageState extends State<LoginPage> {
                   TextFormField(
                     validator: (String? value) {
                       if (value!.isEmpty) {
-                        return "Phone No. cant be empty";
+                        return "Mobile No. cant be empty";
+                      }
+                      if (value.length < 10) {
+                        return "Mobile No. must be of 10 characters";
                       }
 
                       return null;
@@ -147,7 +153,7 @@ class _LoginPageState extends State<LoginPage> {
                   //   onPressed: () {
                   //     Navigator.pushNamed(context, MyRoutes.homeRoute);
                   //   },
-                  //   child: Text("Login"),
+                  //   child: Text("Register"),
                   //   style: TextButton.styleFrom(minimumSize: Size(120, 30)),
                   // )
                 ],

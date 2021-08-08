@@ -7,13 +7,16 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("First App"),
       ),
-      backgroundColor: Colors.blueAccent,
+      backgroundColor: Colors.white,
       body: Center(
         child: Container(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Welcome to Home Page"),
+              Text(
+                "Welcome to Home Page",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ),
